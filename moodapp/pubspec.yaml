@@ -1,0 +1,59 @@
+name: moodapp
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1 # Defines the app version and build number
+
+environment:
+  sdk: '>=2.19.0 <3.0.0' # Specifies the Flutter SDK version compatibility
+
+dependencies:
+  flutter:
+    sdk: flutter # Flutter SDK dependency for building the app
+  cupertino_icons: ^1.0.2 # Cupertino icons for iOS style icons
+  sqflite: ^2.0.0+4 # Database package for local SQLite storage
+  path: ^1.8.0 # Provides utilities for file paths
+  crypto: ^3.0.2 # Cryptographic functions (e.g., hashing)
+  path_provider: ^2.1.2 # Provides access to commonly used locations on the device for storing files
+
+  #  Responsible UI package for making the app responsive on different screen sizes
+  flutter_screenutil: ^5.5.3
+
+  #  For navigation with smooth page transitions
+  page_transition: ^2.0.9
+
+  #  Date picker widget for timeline view in the app
+  date_picker_timeline: ^1.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter # Flutter test framework for unit tests
+
+  flutter_lints: ^2.0.0 # Linting package for code style and standards enforcement
+
+flutter:
+  uses-material-design: true # Enables Material Design for the app
+
+  assets:
+    - assets/images/ # Defines the image asset folder to be included in the app
+    - assets/images/logo.png # Specifies an individual image asset (logo)
+
+  fonts:
+    - family: Roboto # Defines the Roboto font family
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf # Regular weight of Roboto font
+
+    - family: Roboto_Medium # Defines the Medium weight of the Roboto font
+      fonts:
+        - asset: assets/fonts/Roboto-Medium.ttf
+
+    - family: Roboto_Bold # Defines the Bold weight of the Roboto font
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
+
+    - family: Poppins # Defines the Poppins font family
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf # Regular weight of Poppins font
